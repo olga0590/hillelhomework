@@ -1,8 +1,8 @@
 function pow(a, b) {
-  let power = 1;
+  let result = 1;
   for (let i = 0; i < b; i++) {
-    power = power * a;
+    result = result * a;
   }
-  return power;
+  return result;
 }
 console.log(pow(2, 3));
