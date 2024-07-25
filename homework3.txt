@@ -1,6 +1,6 @@
 function pow(a, b) {
-  var power = 1;
-  for (var i = 0; i < b; i++) {
+  let power = 1;
+  for (let i = 0; i < b; i++) {
     power = power * a;
   }
   return power;
