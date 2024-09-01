@@ -1,0 +1,55 @@
+var services = {
+  стрижка: "60 грн",
+  гоління: "80 грн",
+  Миття_голови: "100 грн",
+};
+
+function arr() {
+  let amountKey = [];
+  for (let key in services) {
+    let keyCount = parseInt(services[key]);
+    amountKey.push(keyCount);
+  }
+  return amountKey;
+}
+
+function price() {
+  let amountKey = arr();
+  let sum = 0;
+  for (let i = 0; i < amountKey.length; i++) {
+    sum += amountKey[i];
+  }
+  console.log(`Сумма всех услуг: ${sum} грн`);
+}
+// вывод сумму услуг до добавления
+price();
+// собавление свойства
+services.укладка = "250 грн";
+// вывод суммы после добавления свойства
+price();
+
+function maxPrice() {
+  let amountKey = arr();
+  let largestNumbers = amountKey[0];
+  for (let i = 0; i < amountKey.length; i++) {
+    if (largestNumbers < amountKey[i]) {
+      largestNumbers = amountKey[i];
+    }
+  }
+  console.log(`Максимальная сумма услуг: ${largestNumbers} грн`);
+}
+//вывод максимальной суммы услуг
+maxPrice();
+
+function minPrice() {
+  let amountKey = arr();
+  let minNumbers = amountKey[0];
+  for (let i = 0; i < amountKey.length; i++) {
+    if (minNumbers > amountKey[i]) {
+      minNumbers = amountKey[i];
+    }
+  }
+  console.log(`Минимальная сумма услуг: ${minNumbers} грн`);
+}
+//вывод минимальнойі суммы услуг
+minPrice();
