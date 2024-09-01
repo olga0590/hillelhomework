@@ -1,4 +1,4 @@
-let n = 12;
+let n = 12;//задаю количество рандомных числел
 let arr = [];
 function randomNumbers(start, end) {
   for (let i = 1; i <= n; i++) {
