@@ -11,7 +11,7 @@ function arr() {
     amountKey.push(keyCount);
   }
   return amountKey;
-}
+}//достала цены со строк и сложила их в массив
 
 function price() {
   let amountKey = arr();
